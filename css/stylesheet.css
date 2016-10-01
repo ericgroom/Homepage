@@ -3,7 +3,7 @@ HEADING
 ****************/
 
 header {
-  margin: 10% auto;
+  margin: 100px auto;
 }
 
 h1 {
@@ -42,8 +42,8 @@ LISTS
 #main section {
   display: inline-block;
   float: left;
-  margin: 0 2.5%;
-  width: 20%;
+  margin: 20px 15%;
+  width: 70%;
 }
 
 #wrapper {
@@ -62,6 +62,10 @@ body {
 
 body a, body a:visited {
   color: #65737E;
+}
+
+body a:hover {
+  color: #96B5B4;
 }
 
 #main ul {
