@@ -2,10 +2,12 @@
 HEADING
 ****************/
 
+header {
+  margin: 10% auto;
+}
 
 h1 {
   display: block;
-  margin: 10% auto;
   font-family: 'Pacifico', cursive;
   font-size: 3.0em;
   text-align: center;
