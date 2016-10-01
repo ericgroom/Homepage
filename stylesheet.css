@@ -1,0 +1,63 @@
+/****************
+HEADING
+****************/
+
+
+h1 {
+  display: block;
+  margin: 10% auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 3.0em;
+}
+
+
+/****************
+LISTS
+****************/
+
+#main h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  width: 100%;
+}
+
+#main li {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+#main ul {
+  list-style: none;
+}
+
+#main section {
+  float: left;
+  max-width:
+  margin: 0 2.5%;
+  width: 20%;
+}
+
+/****************
+COLORS
+****************/
+
+body {
+  background-color: #2B303B;
+  color: #EFF1F5;
+}
+
+#main ul {
+  background-color: #65737E;
+}
+
+#reddit h3 {
+  background-color: #8FA1B3;
+}
+
+#school h3 {
+  background-color: #96B5B4;
+}
+
+#dev h3 {
+  background-color: #A3BE8C
+}
