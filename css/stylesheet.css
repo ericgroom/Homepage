@@ -44,6 +44,11 @@ LISTS
   width: 20%;
 }
 
+#wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 /****************
 COLORS
 ****************/
@@ -70,5 +75,9 @@ body a, body a:visited {
 }
 
 #dev h3 {
-  background-color: #A3BE8C
+  background-color: #A3BE8C;
+}
+
+#general h3 {
+  background-color: #AB7967;
 }
