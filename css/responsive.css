@@ -5,9 +5,6 @@
     width: 25%;
   }
 
-  #main:nth-child(5n) {
-    clear: left;
-  }
 }
 
 /* desktop */
@@ -21,7 +18,7 @@
     margin: inherit 10%;
   }
 
-  #main:nth-child(5n) {
+  #main section:nth-child(5n) {
     clear: left;
   }
 }
