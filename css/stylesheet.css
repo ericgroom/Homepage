@@ -21,6 +21,7 @@ LISTS
   font-weight: 500;
   width: 100%;
   text-align: center;
+  margin: 0;
 }
 
 #main a {
@@ -30,6 +31,7 @@ LISTS
 }
 
 #main ul {
+  margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
