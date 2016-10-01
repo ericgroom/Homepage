@@ -18,7 +18,7 @@ h1 {
 LISTS
 ****************/
 
-#main h3 {
+.main h3 {
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   width: 100%;
@@ -26,27 +26,27 @@ LISTS
   margin: 0;
 }
 
-#main a {
+.main a {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   text-decoration: none;
 }
 
-#main ul {
+.main ul {
   margin: 0;
   padding: .125em 0;
   text-align: center;
   list-style: none;
 }
 
-#main section {
+.main section {
   display: inline-block;
   float: left;
   margin: 20px 15%;
   width: 70%;
 }
 
-#wrapper {
+.wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -68,22 +68,22 @@ body a:hover {
   color: #96B5B4;
 }
 
-#main ul {
+.main ul {
   background-color: #EFF1F5;
 }
 
-#reddit h3 {
+.reddit h3 {
   background-color: #8FA1B3;
 }
 
-#school h3 {
+.school h3 {
   background-color: #96B5B4;
 }
 
-#dev h3 {
+.dev h3 {
   background-color: #A3BE8C;
 }
 
-#general h3 {
+.general h3 {
   background-color: #AB7967;
 }
