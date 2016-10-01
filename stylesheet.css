@@ -29,8 +29,6 @@ LISTS
   text-decoration: none;
 }
 
-
-
 #main ul {
   padding: 0;
   text-align: center;
@@ -54,11 +52,11 @@ body {
 }
 
 body a, body a:visited {
-  color: #EFF1F5;
+  color: #65737E;
 }
 
 #main ul {
-  background-color: #65737E;
+  background-color: #EFF1F5;
 }
 
 #reddit h3 {
