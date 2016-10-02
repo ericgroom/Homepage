@@ -8,9 +8,10 @@ request.onload = function() {
     var top = data.data.children.slice(0, 3);
 
     for(var i = 0; i < top.length; i++) {
-        var title = truncate(top[i].data.title);
+        var title = top[i].data.title;
+        var short_title = truncate(title);
         var url = top[i].data.url;
-        var text = '<li><a href="' + url + '">' + title + '</a></li>';
+        var text = '<li><a href="' + url + '" title="' + title + '">' + short_title + '</a></li>';
         document.getElementById('reddit').insertAdjacentHTML('beforeend', text);
     }
     
