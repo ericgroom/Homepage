@@ -9,12 +9,13 @@ request.onload = function() {
 
     for(var i = 0; i < top.length; i++) {
         var title = top[i].data.title;
-        var short_title = truncate(title);
+        var lilTitle = truncate(title);
         var url = top[i].data.url;
-        var text = '<li><a href="' + url + '" title="' + title + '">' + short_title + '</a></li>';
+        // Constant appending on strings is not needed
+        var text = `<li><a href="${url}" title="${title}">${lilTitle}</a></li>`;
         document.getElementById('reddit').insertAdjacentHTML('beforeend', text);
     }
-    
+
   }
 };
 
