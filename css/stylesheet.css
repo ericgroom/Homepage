@@ -68,22 +68,22 @@ body a:hover {
   color: #96B5B4;
 }
 
-.main ul {
+._main ul {
   background-color: #EFF1F5;
 }
 
-.reddit h3 {
+.__reddit h3 {
   background-color: #8FA1B3;
 }
 
-.school h3 {
+.__school h3 {
   background-color: #96B5B4;
 }
 
-.dev h3 {
+.__dev h3 {
   background-color: #A3BE8C;
 }
 
-.general h3 {
+.__general h3 {
   background-color: #AB7967;
 }
