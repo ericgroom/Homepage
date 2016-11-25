@@ -42,7 +42,7 @@ LISTS
 .main section {
   display: inline-block;
   float: left;
-  margin: 20px 15%;
+  margin: 0 15%;
   width: 70%;
 }
 
@@ -86,4 +86,19 @@ body a:hover {
 
 .general h3 {
   background-color: #AB7967;
+}
+
+/****************
+SEARCH
+****************/
+
+section.search {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin: 0 auto;
 }
