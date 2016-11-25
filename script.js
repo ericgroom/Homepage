@@ -34,3 +34,32 @@ document.getElementById("search").addEventListener("submit", function(e) {
     return list;
   }
 })
+
+function toggleGreeting() {
+  var el = document.getElementById("greeting");
+  if ( el.style.display != 'none' ) {
+    el.style.display = 'none';
+  } else {
+    el.style.display = 'block';
+  }
+}
+
+function toggleSearch() {
+  var els = document.getElementsByClassName("search");
+  var el = els[0]
+  if ( el.style.display != 'none' ) {
+    el.style.display = 'none';
+  } else {
+    el.style.display = 'flex';
+  }
+}
+
+document.getElementById("greeting").addEventListener("click", function() {
+  toggleGreeting();
+  toggleSearch();
+})
+
+document.getElementById("search-text").addEventListener("click", function() {
+  toggleGreeting();
+  toggleSearch();
+})

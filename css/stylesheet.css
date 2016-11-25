@@ -93,12 +93,6 @@ SEARCH
 ****************/
 
 section.search {
-  width: 80%;
-  display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 10%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin: 0 auto;
 }

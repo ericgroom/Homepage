@@ -12,7 +12,12 @@
   <body>
     <script src="script.js" type="text/javascript" async></script>
     <header>
-      <h1>Hello, Eric</h1>
+      <h1 id="greeting">Hello, Eric</h1>
+      <section class="search" style="display: none;">
+        <form id="search">
+          <input type="text" placeholder="search" id="search-text" autocomplete="off">
+        </form>
+      </section>
     </header>
     <div class="wrapper">
       <section class="main">
@@ -49,11 +54,6 @@
             <li><a href="http://www.twitter.com">twitter</a></li>
           </ul>
         </section>
-      </section>
-      <section class="search">
-        <form id="search">
-          <input type="text" placeholder="search" id="search-text" autocomplete="off">
-        </form>
       </section>
     </div>
   </body>
