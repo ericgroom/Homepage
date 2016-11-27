@@ -24,7 +24,10 @@ document.getElementById("search").addEventListener("submit", function(e) {
       subreddit = subreddit.slice(2)
     }
     query = joinWithPlus(query);
-    var url = "https://www.reddit.com/r/" + subreddit + "/search?q=" + query + "&restrict_sr=on&sort=relevance&t=all";
+    var url = "https://www.reddit.com/r/" + subreddit;
+    if (query != "") {
+      url+="/search?q=" + query + "&restrict_sr=on&sort=relevance&t=all";
+    }
     return url;
   }
 
@@ -55,11 +58,7 @@ function toggleSearch() {
 }
 
 document.getElementById("greeting").addEventListener("click", function() {
-  toggleGreeting();
   toggleSearch();
+  document.getElementById("search-text").focus();
 })
 
-document.getElementById("search-text").addEventListener("click", function() {
-  toggleGreeting();
-  toggleSearch();
-})

@@ -96,3 +96,32 @@ section.search {
   justify-content: center;
   align-items: flex-end;
 }
+
+#search-text {
+  background-color: #20242c;
+  border: none;
+}
+
+input, select, textarea {
+  color: #DDD;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #DDD;
+  text-align: center;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #DDD;
+  opacity:  1;
+  text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #DDD;
+  opacity:  1;
+  text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #DDD;
+  text-align: center;
+}
