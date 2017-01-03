@@ -10,9 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <script src="script.js" type="text/javascript" async></script>
+    <script src="javascript/search.js" type="text/javascript" async></script>
     <header>
       <h1 id="greeting">Hello, Eric</h1>
+      <div class="weather">
+        <p id="summary">It is currently sunny.</p>
+      </div>
       <section class="search" style="display: none;">
         <form id="search">
           <input type="text" placeholder="search" id="search-text" autocomplete="off">
@@ -56,5 +59,6 @@
         </section>
       </section>
     </div>
+    <script src="javascript/weather.js" type="text/javascript"></script>
   </body>
 </html>

@@ -61,4 +61,3 @@ document.getElementById("greeting").addEventListener("click", function() {
   toggleSearch();
   document.getElementById("search-text").focus();
 })
-
