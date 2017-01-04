@@ -43,7 +43,7 @@ LISTS
 .main section {
   display: inline-block;
   float: left;
-  margin: 0 15%;
+  margin: 0 15% 20px;
   width: 70%;
 }
 
