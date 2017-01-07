@@ -4,23 +4,9 @@ var key = "cfa256a72d1dd578a40187c220292d26";
  * api.openweathermap.org/data/2.5/weather?lat=35&lon=139
  */
 
-var constructURL = function(position) {
-  return "api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude +
-   "&lon" + position.coords.longitude;
+var constructURL = function(zip-code) {
+  return "api.openweathermap.org/data/2.5/weather?zip=" + zip-code + "&APPID=" + key;
 };
-
-var x = document.getElementById("summary");
-function getLocation(callback) {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(callback);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
-}
 
 function getWeather(position) {
   var url = constructURL(position);
@@ -42,12 +28,6 @@ function testJqueryGetJSON(url) {
        var err = textStatus + ", " + error;
        console.log( "Request Failed: " + err )
     });
-}
+};
 
-getLocation(getWeather);
-
-/*
- * ran into issues using dark skies, will have to rethink method of getting location
- * it doesn't feel right to ask for it, especially with VPN fucking things up. will
- * probably just input zip-code, store it as a cookie, and allow the user to change it. 
- */
+alert(constructURL(95662));
