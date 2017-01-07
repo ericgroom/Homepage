@@ -42,7 +42,7 @@ function pullWeather(zipcode) {
 };
 
 function displayWeather() {
-  $("#summary").text(weather.summary + ' | ' + weather.temperature + "°F");
+  $("#summary").text(weather.summary + ' | ' + Math.round(weather.temperature) + "°F");
 };
 
 function storeWeather() {
