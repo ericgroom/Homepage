@@ -1,33 +1,39 @@
 var key = "cfa256a72d1dd578a40187c220292d26";
-/*
- * sample api call
- * api.openweathermap.org/data/2.5/weather?lat=35&lon=139
- */
+var zip = 95662;
 
-var constructURL = function(zip-code) {
-  return "api.openweathermap.org/data/2.5/weather?zip=" + zip-code + "&APPID=" + key;
-};
-
-function getWeather(position) {
-  var url = constructURL(position);
-  // $.getJSON(url, function(data) {
-  //   alert(data.currently.summary);
-  // })
-  testJqueryGetJSON(url);
+var constructURL = function(zipcode) {
+  return "http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us" + "&APPID="
+  + key;
 };
 
 function testJqueryGetJSON(url) {
-  $.getJSON(url, function(result){
+  $.getJSON(url).done(function(result){
         if (result.length == 0){
             alert("nothing") ;
         }
         if (result.length){
             alert("success") ;
         }
-    }).fail(function( jqxhr, textStatus, error ) {
-       var err = textStatus + ", " + error;
-       console.log( "Request Failed: " + err )
+    }).fail( function(d, textStatus, error) {
+        console.error("getJSON failed, status: " + textStatus + ", error: "+error)
     });
 };
 
-alert(constructURL(95662));
+function capitalize(str) {
+  var first = str.charAt(0);
+  first = first.toUpperCase();
+  return first + str.slice(1);
+}
+
+function getWeather(zipcode) {
+  var url = constructURL(zipcode);
+  console.log(url);
+  $.getJSON(url, function(data) {
+    var summary = data.weather[0].description;
+    summary = capitalize(summary);
+    console.log(summary);
+    $("#summary").text(summary);
+  });
+}
+
+$(getWeather(zip));
