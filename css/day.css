@@ -1,0 +1,47 @@
+h1 {
+  color: #eff1f5;
+  text-shadow: 2px 2px #4f5b66;
+}
+
+#summary {
+  color: #eff1f5;
+  text-shadow: 1px 1px #4f5b66;
+}
+
+body {
+  color: #eff1f5;
+  background-image: url(../assets/ocean_grey.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #eff1f5;
+}
+
+.main ul {
+  background-color: #728291;
+}
+
+body a, body a:visited {
+  color: #eff1f5;
+}
+
+input, select, textarea {
+  color: #c0c5ce;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #c0c5ce;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #c0c5ce;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #c0c5ce;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #c0c5ce;
+}
